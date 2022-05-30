@@ -1,0 +1,92 @@
+
+
+<style>
+
+    * { margin: 0px auto; margin-top: 10px; }
+
+    body { width: 500px; height: 700px; }
+
+    div { display: block;}
+
+    .login_text { text-align: center;}
+    
+    .login_select { width: 500px; display: inline-block;}
+
+    #personal_login {  float:left; width: 200px; height: 50px; font-size: 15px;}    
+
+    #company_login { float:right; width: 200px; height: 50px; font-size: 15px;}
+
+    .clicked { background-color: #8D8D8D; color:white; border:none; }
+
+    .id, .pw { width: 100%; height: 50px;}
+
+    img { width: 200px; height: 50px;}
+
+    .login_button { width: 100%; height: 50px; font-size: 15px;
+        border:none; background-color: #8D8D8D; color: white;}
+</style>
+
+<body>
+    <div class="login_text">
+    <h style="font-size:30px; width: 100%;" >로그인</h>
+    </div>
+
+    <div class="login_select">
+        <button class="div2" id="personal_login">개인</button>
+        <button class="div2" id="company_login">기업</button>
+    </div>
+
+    <div class="login">
+        <input class="id" placeholder="아이디"/>
+        <input class="pw" placeholder="비밀번호"/>
+    </div> 
+
+    <div>
+        <input type="checkbox"><h>자동 로그인</h>
+    </div>
+
+    <div class="social">
+        <img src="imgs\kakao_login_large_narrow.png">
+        <img src="imgs\naver_login.png">
+    </div>
+
+    <button class="login_button">로그인</button>
+    
+    <div class="option">
+        <a rel="#"><h class="register" style="float:left;">회원가입</h></a>
+        <h class="find" style="float:right">아이디 · 비밀번호 찾기 </h>
+    </div>
+
+</body>
+
+<script>
+
+var div2 = document.getElementsByClassName("div2");
+
+function handleClick(event) {
+  console.log(event.target);
+  // console.log(this);
+  // 콘솔창을 보면 둘다 동일한 값이 나온다
+
+  console.log(event.target.classList);
+
+  if (event.target.classList[1] === "clicked") {
+    event.target.classList.remove("clicked");
+  } else {
+    for (var i = 0; i < div2.length; i++) {
+      div2[i].classList.remove("clicked");
+    }
+
+    event.target.classList.add("clicked");
+  }
+}
+
+function init() {
+  for (var i = 0; i < div2.length; i++) {
+    div2[i].addEventListener("click", handleClick);
+  }
+}
+
+init();
+
+</script>

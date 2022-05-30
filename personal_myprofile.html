@@ -1,0 +1,91 @@
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap');
+
+    * { text-align: center; margin: 0px auto; font-family: 'Noto Sans KR', sans-serif;;}
+
+    body { width: 800px;}
+
+    #myprofile_title, #career_title, #list_title { margin-bottom: 20px; font-size: 30px; text-align: left; font-family: 'Noto Sans KR', sans-serif;}
+
+    #myprofile_container { width: 800px; height: 500px; border-radius: 15px 15px 0 0;   }
+
+    #myprofile_image { width: 30%; height: 150px; border:1px solid gray; float: left;
+    border-radius: 15px 0 0 0;}
+
+    #personal_information { width: 69.5%; height: 150px; border:1px solid gray; float: right;
+    border-right: none; border-left: none; border-radius: 0 15px 0 0;}
+
+    #image { width: 100px; height: 100px;
+        background-color: #d8d8d8; border-radius: 50%;}
+
+    h { display: block;}
+
+    #introduction_content { border: 1px solid gray; width: 100%; height: 350px; display: block;
+        border-radius:0 0 15px 15px; }
+
+    #introduction_content h { text-align: left; }
+
+    #career_image { width: 50px; height: 50px; border:1px solid gray; border-radius: 20%;}
+
+    #career_name { margin-top: 10px;}
+
+    #apply_list, #bookmark_list { border:1px solid gray; background-color: white; width: 100px; height: 50px;}
+
+</style>
+
+<body>
+
+<h id="myprofile_title">자기소개</h>
+
+<div id="myprofile_container">
+
+    <div id="myprofile_image">
+        <div id="image">            
+        </div>
+
+        <button>사진변경</button>
+    </div>
+
+    <div id="personal_information">
+        <h>이름 : 김치파워</h>
+        <h>별명 : 김치남</h>
+        <h>주소 : 광주 서구 농성동</h>
+        <h>이메일 : kimchiman@naver.com</h>        
+    </div>
+
+    <div id="introduction_content">
+        <h>자기소개</h>
+        <h>저는 김치를 좋아하는 김치남입니다.</h>
+    </div>
+
+</div>
+
+<div id="career">
+
+    <h id="career_title">경력관리</h>
+
+    <div id="career_image"></div>
+    <h id="career_name">CU편의점</h>
+
+</div>
+
+<div id="list_check">
+
+    <h id="list_title">내역확인</h>
+
+    <div id="list_container">
+
+        <button id="apply_list">지원내역</button>
+        <button id="bookmark_list">스크랩 알바</button>
+
+        <div id="list_content">
+            태그라이브러리를 통하여 구분하도록 하자
+        </div>
+
+
+    </div>
+
+</div>
+
+</body>

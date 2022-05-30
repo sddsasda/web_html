@@ -1,0 +1,53 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+
+
+    * { text-align: center; margin: 0px auto;}
+    body { width: 800px; }
+
+    #hire_title { display:block; font-family: 'Noto Sans KR', sans-serif;  text-align: left; font-size: 30px; margin-bottom: 50px;}
+
+    #hire_image { width: 100px; height: 100px; border:1px solid gray; border-radius: 20%; float: left;}
+
+    #hire_list { border-top: 1px solid gray; border-bottom: 1px solid gray; height: 100px; padding: 20px; margin-top: 99px;}
+
+    button { border:1px solid gray; background-color: white; width: 130px; height: 50px; float: left; font-size: 18px;}
+
+    button:hover { background: #9BBED7; color: white; font-size: 18px;}
+
+    #hire_content h { display: block;}
+
+    select { width: 120px; height: 50px; float:right;}
+    
+</style>
+
+<body>
+
+    <div id="hire_manage"></div>
+
+
+    <h id="hire_title">구인관리</h>
+
+    <button id="hire_now">구인중</button>
+    <button id="hire_stop">구인중단</button>
+    <button id="hire_complete">구인완료</button>
+
+    <div id="hire_list">
+        
+        <div id="hire_image"></div>
+
+        <div id="hire_content">
+        <h>CU편의점 대체자 구함</h>
+        <h>지원자 현황 0명</h>
+        </div>
+        
+        <select name="hire_condition">
+            <option value="">구인상태</option>
+            <option value="구인중" selected="selected">구인중</option>
+            <option value="구인중단">구인중단</option>
+            <option value="구인완료">구인완료</option>
+        </select>
+
+    </div>
+
+</body>
