@@ -4,9 +4,38 @@
 
     body { width: 800px; height: 500px;}
 
-    #title { height: 100px; border-top: 1px solid gray; border-bottom: 1px solid gray;}
+    #title { height: 120px; margin-top: 30px;
+        border-top: 1px solid gray; border-bottom: 1px solid gray;}
+
+    #write_data { margin-top: 20px;}
 
     li { display: inline-flex;}
+
+    #content { border-bottom: 1px solid gray; height: 300px;}
+    
+    #tag { position: relative; top: 70%}
+
+    #tag li { background-color: D9D9D9; }
+
+    #option { position: relative; float: right; top: 70%}
+
+    img { width:25px; height: 25px;}
+
+    #comment_write { width: 800px; height: 200px; border: 1px solid gray;}
+
+    #comment-input { width: 800px; height: 170px; border: none;}
+
+    #submit { position: relative; top:-10%; right:2%; width:70px; height: 30px; float: right; 
+        background-color: #8D8D8D; border: none; color:white; opacity: .5;}
+
+    #lock { position: relative; float: right; top:-10%; right:15%;}
+
+    #option2 { margin-top: 20px; float:right;}
+    
+    #modify, #delete, #write { width: 70px; height: 35px; background-color: #8D8D8D;
+        border: none; color:white;}
+
+    #comment-input:focus { outline: none; }    
 
 
 </style>
@@ -15,8 +44,8 @@
     <h>카테고리</h>
     
     <div id="title">
-        <h>이알저알 어플 출시</h>
-        <ul>
+        <h style="font-size: 30px; margin-top: 20px;">이알저알 어플 출시</h>
+        <ul id="write_data">
             <li>운영자</li>
             <li>작성날짜</li>
             <li>작성시간</li>
@@ -30,16 +59,36 @@
     </div>
 
     <div id="content">
-        <h>어플 출시 했당 후후</h>
+        
+        <h style="padding-top: 20px;">어플 출시 했당 후후</h>
 
     <ul id="tag">
         <li>#한울</li>
         <li>#프로젝트</li>
     </ul>
     
-    <ul>
-        <li><img src="imgs\like.png"> </li>
-    </ul>
-    
+    <ul id="option">
+        <li><img src="imgs\like.png">추천</li>
+        <li><img src="imgs\siren.png">신고 </li>
+        <li><img src="imgs\share.jpg">공유 </li>
+    </ul>    
     </div>
+
+    <div id="comment">
+
+    </div>
+
+    <div id="comment_write">        
+        <input id="comment-input">
+
+        <img id="lock" src="imgs\lock.png">
+        <button id="submit">등록</button>
+    </div>
+
+    <div id="option2">
+        <button id="modify">수정</button>
+        <button id="delete">삭제</button>
+        <button id="write">글쓰기</button>
+    </div>
+
 </body>
