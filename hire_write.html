@@ -1,0 +1,124 @@
+<style>
+    
+    * { margin: 0px auto;}
+
+    body { width: 800px; }
+
+    
+    
+    #hire_title, #content_title { font-size: 30px; }
+
+    #hire_condition { height: 300px;  margin-top: 30px; margin-bottom: 30px; border: 1px solid gray; border-radius: 15px; }
+
+    #content { height: 200px; margin-top: 30px; border: 1px solid gray; border-radius: 15px;}
+
+    #content_title { }
+
+    h { padding-right: 20px;}
+
+    input { width: 70%; height: 30px; margin-top: 20px; }
+
+    select { width: 70px;}
+
+    #file { border-top: 1px solid gray; border-bottom: 1px solid gray; margin-top: 50px; }
+
+    #file_input { color: #D9D9D9; }
+
+    #button { position: relative; left: 30%; margin-top: 30px; }
+
+    button { width:70px; height:30px; background-color: white; margin-left: 20px;
+        border:1px solid gray; color: black;}
+
+    button:hover { background: #8D8D8D; color: white; }
+
+</style>
+
+
+<body>
+
+    <h id="hire_title">근무조건</h>      
+        
+        <div id="hire_condition">
+            
+            <div id="title">
+                <h>공고제목</h>
+                <input id="title_input">
+            </div>
+            
+            <div id="location">
+                <h>근무지</h>&emsp;
+                <input id="location_input">
+                <button>검색</button>
+            </div>
+            
+            <div id="detail_location">
+                <h>상세주소</h>
+                <input id="detail_input">
+            </div>
+            
+            <div id="time">
+                <h>근무시간</h>
+                <input id="time_input">
+            </div>
+
+            <div id="money">
+                <select name="money_select">                    
+                    <option value="시급" selected="selected">시급</option>
+                    <option value="건당">건당</option>
+                    <option value="일당">일당</option>
+                </select>
+
+                <input type="number" id="money_input">
+            </div>
+
+        </div>
+
+        <h id="content_title">근무 내용 소개</h>
+
+        <div id="content">
+            
+            [모집]
+주말오후에 함께 일해주실 성실한 staff를 모집합니다.
+
+[모집내용]
+* 근무요일 : 토, 일 
+* 근무시간 : 오후 15:00~22:00
+* 시급 : 9,160원
+* 고용형태 : 아르바이트
+* 경력 : 무관(신입+경력) 
+전화 문의시 미리 문자로 알려주시면 고맙겠습니다.
+
+
+＊ 업무내용
+- 담당업무 : 카운터 보기, 고객응대, 상품진열과 판매 , 청소
+
+＊ 복리후생
+- 국민연금, 건강보험, 고용보험, 산재보험
+
+＊ 우대사항
+- 없음
+
+＊ 제출서류
+- 알바천국 이력서
+
+＊ 지원방법
+- 문자 : 이름/성별/나이/근무가능기간/희망근무시간,요일
+- 전화 문의시 '알바천국에서 보고 전화드렸어요'라고 하세요.
+
+＊ 기타사항
+- 없음
+        </div>
+
+       <div id="file">
+        <input type="file" id="file_input">
+
+       </div>
+
+
+<div id="button">
+<button id="submit">등록</button>
+<button id="cancel">취소</button>
+</div>           
+
+
+</body>

@@ -1,0 +1,47 @@
+<style>
+    * { margin:0px auto; list-style: none;}
+
+    body { width: 800px;}
+
+    select { position: relative; left: 85%; border:none; outline: white; font-size: 20px;}
+
+    #list { height:150px; border-top: 1px solid gray; border-bottom: 1px solid gray;}
+
+    #list:nth-of-type(2n) { border-top: none;}
+
+    #image { margin:20px; float:left; width:100px; height: 100px; background-color: #D9D9D9; border-radius: 50%;}
+
+    #information { float:left; margin-top: 20px;}
+
+    li { margin-top: 10px;}
+
+</style>
+
+<body>
+    <select>
+        <option>리뷰순</option>
+        <option>최근활동순</option>
+        <option>평점순</option>
+        <option>고용순</option>
+    </select>
+
+    <div id="list" style="margin-top: 50px;">
+        <div id="image"></div>
+
+        <ul id="information">
+            <li>닉네임</li>
+            <li>활동지역</li>
+            <li>별점(리뷰개수)</li>
+        </ul>
+    </div>   
+
+    <div id="list">
+        <div id="image"></div>
+
+        <ul id="information">
+            <li>닉네임</li>
+            <li>활동지역</li>
+            <li>별점(리뷰개수)</li>
+        </ul>
+    </div>
+</body>

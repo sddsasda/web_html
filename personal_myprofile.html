@@ -8,29 +8,35 @@
 
     #myprofile_title, #career_title, #list_title { margin-bottom: 20px; font-size: 30px; text-align: left; font-family: 'Noto Sans KR', sans-serif;}
 
-    #myprofile_container { width: 800px; height: 500px; border-radius: 15px 15px 0 0;   }
+    #myprofile_container { width: 800px; height: 400px;}
 
-    #myprofile_image { width: 30%; height: 150px; border:1px solid gray; float: left;
-    border-radius: 15px 0 0 0;}
+    #myprofile_image { width: 30%; height: 180px; float: left;    }
 
-    #personal_information { width: 69.5%; height: 150px; border:1px solid gray; float: right;
-    border-right: none; border-left: none; border-radius: 0 15px 0 0;}
+    #personal_information { width: 69.5%; height: 180px;  float: right;
+    border-right: none; border-left: none; }
 
-    #image { width: 100px; height: 100px;
+    #personal_information h { margin-top: 10px;}
+
+    #image { width: 100px; height: 100px; margin-top: 30px;
         background-color: #d8d8d8; border-radius: 50%;}
+
+  /*프로필수정*/  #change_profile { width:100px; height: 30px; margin-top: 10px; background-color: white; border: 1px solid #E2E2E2; }
 
     h { display: block;}
 
-    #introduction_content { border: 1px solid gray; width: 100%; height: 350px; display: block;
-        border-radius:0 0 15px 15px; }
+    #introduction_content { border-bottom: 1px solid #E2E2E2; width: 100%; height: 350px; display: block;         }
 
-    #introduction_content h { text-align: left; }
+    #introduction_content h { text-align: left; margin-top: 0px;}
 
-    #career_image { width: 50px; height: 50px; border:1px solid gray; border-radius: 20%;}
+    #career { border-bottom: 1px solid #E2E2E2; padding-bottom: 50px; height: 300px;}
+    #career_manage {float: right; font-size: 20px;}
+    #career_list { display: block; float: left; margin-top: 50px; margin-right: 50px;}
+    #career_image { width: 100px; height: 100px; border:1px solid gray; border-radius: 20%;}
+    #career_name { margin-top: 10px; display: block;}
 
-    #career_name { margin-top: 10px;}
-
-    #apply_list, #bookmark_list { border:1px solid gray; background-color: white; width: 100px; height: 50px;}
+    #list_title { margin-top: 80px;}
+    #apply_list, #bookmark_list { border:1px solid gray; background-color: white; width: 130px; height: 50px; float: left; font-size: 20px;}
+    #apply_list:hover, #bookmark_list:hover { background-color: #9BBED7; color: white;}
 
 </style>
 
@@ -43,20 +49,33 @@
     <div id="myprofile_image">
         <div id="image">            
         </div>
-
-        <button>사진변경</button>
+        <button id="change_profile">프로필 수정</button>
     </div>
+   
 
-    <div id="personal_information">
-        <h>이름 : 김치파워</h>
-        <h>별명 : 김치남</h>
-        <h>주소 : 광주 서구 농성동</h>
-        <h>이메일 : kimchiman@naver.com</h>        
-    </div>
+    <table id="personal_information">
+                
+        <tr>
+            <th>이름 </th>
+            <td>김치남</td>
+        </tr>
+        <tr>
+            <th>별명 </th>
+            <td>김치좋아</td>
+        </tr>
+        <tr>
+            <th>주소 </th>
+            <td>광주 서구 농성동</td>
+        </tr>
+        <tr>
+            <th>이메일 </th>
+            <td>kimchiman@naver.com</td>
+        </tr>
+    </table>
 
     <div id="introduction_content">
         <h>자기소개</h>
-        <h>저는 김치를 좋아하는 김치남입니다.</h>
+        
     </div>
 
 </div>
@@ -64,9 +83,18 @@
 <div id="career">
 
     <h id="career_title">경력관리</h>
+    <a id="career_manage"><관리하기></a>
 
+    <div id="career_list">
     <div id="career_image"></div>
     <h id="career_name">CU편의점</h>
+    </div>
+
+    <div id="career_list">
+        <div id="career_image"></div>
+        <h id="career_name">CU편의점</h>
+        </div>
+        
 
 </div>
 

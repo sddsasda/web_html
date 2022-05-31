@@ -1,34 +1,64 @@
-<style>
+<script type="text/javascript">
+    var bDisplay = true;
+    function doDisplay(){
+        var con = document.getElementById("mainprofile");
+        if(con.style.display=='none'){
+            con.style.display = 'block';
+        }else{
+            con.style.display = 'none';
+        }
+    }
+    </script>
 
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 @font-face {
-    font-family:'jalnan';
-    src: url("/fonts/jalnan.woff") format(woff);
-    src: url("/fonts/jalnan.ttf");
-    font-weight: normal;
-    font-style: normal; 
+    font-family: 'jalnan';
+    src: url('fonts/jalnan.ttf') format('truetype');
 }
 
-    * { list-style: none; float: left; margin:0px auto; }
+    * { list-style: none; margin: 0px auto;  text-align: center;}
+
+    body { width:1200px;}
 
     #header { padding-top: 50px; }
 
-    #mainlogo { color: #FFC107; font-size: 40px; font-family: ja;}
+    #mainlogo { display: inline-flex; color: #FFC107; font-size: 60px; font-family: 'jalnan'; margin-right: 100px;}
 
-    #mainmenu li{  padding-right: 10px ; }
+    #mainmenu { display: inline-flex; width: 600px; margin-right: 100px;}
 
-    img { width: 50px; height: 50px;}
+    #mainmenu li{ display: inline-flex; padding-right: 40px; font-size: 20px; font-family:'Gowun Dodum', sans-serif;
+    color:#A2A2A2; }
 
-    #mainprofile { top:100px; right:100px;
-        width:300px; height: 180px; float: none; position: absolute; display:;
-    border: 1px solid gray;}
+    #mainmenu li:hover { color:#222222}
 
-    #profile_image { width: 50px;}
+    #join { display: inline-flex;}
+    
+    #join img { width: 40px; height: 40px; float: right; margin-left: 30px;}    
+    
 
-    #mainprofile h { width: 100%;}
+    #mainprofile { top:150px; right:200px; width:400px; height: 180px; position: absolute; 
+    border: 1px solid #E2E2E2;; text-align: center;  font-family: 'Noto Sans KR', sans-serif;}
 
-    #mypage, #logout { border: 1px solid gray; width: 148px;}
+    #profile_image { width: 75px; height: 75px; margin-top: 20px; display: block;}
+
+    #mainprofile h { width: 100%; font-size: 20px;}
+
+    #profile_menu { position: relative; top: 26px;  }
+
+    #mypage, #logout { background-color: white; border: 1px solid #E2E2E2; height: 29px; margin-left: -2; margin-right: -5; width: 49.4%; display: inline-flex;
+    border-bottom: none; opacity: 5;}
+
+    #mypage { padding-left: 7; border-left: none;}
+
+    #logout { border-left:none; border-right: none;}
 
 </style>
+
+<body>
+
 
 <div id="header">
 
@@ -46,21 +76,23 @@
 
 <div id="join">
     <img src="imgs\문서.png"> 
-    <img src="imgs\프로필아이콘.png">
-    
-    <div id="mainprofile">
-        
-        <div id="header" style="width:100%; height: 80%;">
-        <img id="profile_image" src="imgs\프로필선택이미지.png">
-        <h>야부리님</h>
-        </div>
+    <a href="javascript:doDisplay();"> <img id="profile" src="imgs\profile.png"> </a>
+</div>
 
-        <div id="profile_menu" style="height: 20%;">
-            <div id="mypage" >마이페이지</div>
-            <div id="logout" >로그아웃</div>
-        </div>
+
+</div>
+
+<div id="mainprofile">
+        
+    <div id="image">
+        <img id="profile_image" src="imgs\프로필선택이미지.png">
+    <h>야부리님</h>
+    </div>
+
+    <div id="profile_menu">
+        <button id="mypage" ><h>마이페이지</h></button>
+        <button id="logout" ><h>로그아웃</h></button>
     </div>
 </div>
 
-
-</div>
+</body>
