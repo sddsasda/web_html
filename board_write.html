@@ -1,9 +1,9 @@
 <style>
-    * { margin: 0px auto;}
+    * { margin: 0px auto; text-decoration: none; }
     
     body { width: 800px;}
     
-    div { border-bottom: 1px solid gray; padding-bottom: 20px; margin-bottom: 20px;}
+    div{ border-bottom: 1px solid gray; padding-bottom: 20px; margin-bottom: 20px;}
 
     h { box-sizing: border-box; width:100px; padding-right: 100px;}
     
@@ -11,40 +11,54 @@
 
     #content_input { width:70%; height: 400px;}
 
-    button { width:70px; height:30px; background-color: white; 
-        border:1px solid gray; color: black;}
+    #button { width:200px; height:30px; border:none;}
+    
+    button { width: 70px; height: 30px; background-color: white; border:1px solid #d2d2d2; }
 
+    button:hover { background-color: #8D8D8D; color: white;}
+
+    ul { display:inline-flex}
+
+    li { list-style: none; float: left;}
+
+    li a:focus { background-color: #0067A3; color: white; }
 
 </style>
 
 <body>
 
 <div id="writer">
-    <h>작성자</h>
+    <h>작성자</h>&emsp;
     <input id="wirter_input">
 </div>
 
 <div id="title">
-    <h>제목</h>
+    <h>제목</h>&emsp;&emsp;
     <input id="title_input">
 </div>
 
 <div id="category">
     <h>카테고리</h>
-    <input id="category_input">
+    <ul id="category_input">
+        <li><a href="#">자유주제</a></li>
+        <li><a href="#">알바썰</a></li>
+        <li><a href="#">알바리뷰</a></li>
+        <li><a href="#">알바추천</a></li>
+    </ul>    
 </div>
 
 <div id="content">
-    <h>내용</h>
+    <h>내용</h>&emsp;&emsp;
     <input id="content_input">
 </div>
 
 <div id="file">
-    
+    <input type="file">
 </div>
 
+<div id="button">
 <button id="submit">등록</button>
 <button id="cancel">취소</button>
-
+</div>
 
 </body>

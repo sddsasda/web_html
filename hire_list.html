@@ -7,11 +7,9 @@
 
     #hire_title, #hire_condition { border-top: 1px solid gray; border-bottom: 1px solid gray;}
 
-    #hire_title { margin-top: 100px;}
+    #hire_title { margin-top: 100px;}    
 
-    
-
-    #company_logo { width: 100px; height: 100px; padding: 20px 20px; }
+    #company_logo { width: 100px; height: 100px; padding: 20px 20px; display: inline-flex; }
 
     #hire_text1 {display: inline-flex;}
 
@@ -19,7 +17,9 @@
 
     #hire_condition_title, #hire_content_title {  font-family: 'Noto Sans KR', sans-serif; font-size: 30px; }
 
-    #vertical-1 { margin: 20px 10px; }
+    #vertical-1 { margin: 20px 10px; text-align: left; margin-left: 100px;}
+
+    th { width: 150px;}
 
 </style>
 
@@ -46,12 +46,8 @@
         
         <div id="hire_title">
 
-            <img id="company_logo" src="imgs\cu.png">
-
-        <div id ="hire_text1" >   
-            <h style="">공고제목</h>
-            <h style="display: block;">농성 편의점 하루 대체 구합니다.</h>
-        </div>
+            <img id="company_logo" src="imgs\cu.png">           
+            <h style="display: inline-flex;">농성 편의점 하루 대체 구합니다.</h>
 
         </div>
 
@@ -86,7 +82,7 @@
             
             <h id="hire_content_title">근무내용</h>
 
-            <h>이알저알 일 하고 싶은사람
+            <h style="display: block; margin-top:50px">이알저알 일 하고 싶은사람
             <br/> 여기로 모여라
         </h>        </div>
 

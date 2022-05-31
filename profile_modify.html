@@ -1,12 +1,28 @@
 <style>
-    #profile_image { width: 100px; height: 100px; margin-top: 30px;
+
+    body { width: 150; margin: 0px auto; text-align: center; }
+
+    #profile_image { width: 100px; height: 100px; margin-top: 30px; margin-left: 25;
         background-color: #d8d8d8; border-radius: 50%;}
+
+    #change_image { margin-top: 20px; margin-bottom: 20px;}    
+    
+    #button { margin-top: 30px;}    
+
+    button { width: 70px; background-color: white; border: 1px solid #a2a2a2; }
 </style>
 
 <body>
     <div id="profile_image"></div>
-    <button>사진변경</button>
+    <button id="change_image">사진변경</button>
+    <br>
+    이름 <input> <br>
+    별명 <input> <br>
+    주소 <input> <br>
+    이메일 <input> 
 
-    이름 <input>
-    별명 <input> 
+    <div id="button">
+    <button id="modify">수정</button>
+    <button id="cancel">취소</button>
+    </div>
 </body>
